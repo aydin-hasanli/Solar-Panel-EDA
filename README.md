@@ -110,3 +110,21 @@ Output: \
     ```\
 
 If we perform Mann–Whitney U test on mono and poly technology groups, we would get the same results.
+
+Statistically all groups are different. How about practically? To anwsers this question the some statisctis were calculated for cost per KW. 
+
+| Module Technology          | Mean | Median | P25| P75 | Count    |
+|----------------|-------------|----------|-----------|-----------|--------|
+| CIGS           | 4543.995769 | 4149.680 | 2901.1700 | 5627.3750 | 891    |
+| CIS            | 4126.262222 | 3984.200 | 3115.4500 | 5526.1100 | 81     |
+| CdTe           | 6728.226571 | 6539.185 | 5414.0800 | 8882.4975 | 630    |
+| Mono           | 4151.998150 | 4055.220 | 3298.2500 | 4931.4350 | 529920 |
+| Mono + a-Si    | 4559.878288 | 4021.065 | 3250.0600 | 5767.3200 | 14122  |
+| Poly           | 6154.772923 | 4522.500 | 3538.0000 | 5120.0000 | 438113 |
+| Thin Film      | 4913.078374 | 4993.580 | 3456.4800 | 6639.1325 | 406    |
+| a-Si           | 5651.991894 | 5270.290 | 3539.0025 | 6519.1000 | 322    |
+| a-Si + Micro-c | 5141.099281 | 4766.200 | 3628.0200 | 6217.8300 | 139    |
+| crystalline    | 4585.426336 | 4400.000 | 3500.0000 | 5256.0000 | 24797  |
+| multiple       | 6860.432288 | 4512.360 | 3607.5900 | 5397.7200 | 2443   |
+
+From table above one can observe that 
