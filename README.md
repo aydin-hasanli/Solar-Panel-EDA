@@ -1,6 +1,6 @@
 # Solar Panel EDA
 
-## Python Models 
+## Python Modules 
 * Pandas 
 * Matplotlib
 * Seaborn
