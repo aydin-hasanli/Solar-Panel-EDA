@@ -101,12 +101,12 @@ Output: \
 
 Also Kruskal–Wallis test was performed only on mono and poly technology groups. As those  two groups are most common. The result is same, as p-value is zero. 
 ```
-    stat, p = stats.kruskal(df_rep_CIS,df_rep_CdTe,df_rep_Mono,df_rep_MonoSci,df_rep_Poly, df_rep_Thin_Film, df_rep_crystalline, df_rep_multiple)
+    stat, p = stats.kruskal(df_rep_Mono,df_rep_Poly)
     print('stat=%.0f, p-value=%.3f' % (stat, p))
 ```
 Output: \
     ```
-    stat=16444, p-value=0.000
+    stat=15230, p-value=0.000
     ```\
 
 If we perform Mann–Whitney U test on mono and poly technology groups, we would get the same results.
