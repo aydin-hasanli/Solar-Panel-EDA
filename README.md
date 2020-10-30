@@ -108,6 +108,5 @@ Output: \
     ```
     stat=16444, p-value=0.000
     ```\
-\
 
-If we perform Mann–Whitney U test mono and poly technology groups, we would get the same results.
+If we perform Mann–Whitney U test on mono and poly technology groups, we would get the same results.
