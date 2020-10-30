@@ -113,6 +113,15 @@ If we perform Mann–Whitney U test on mono and poly technology groups, we would
 
 Statistically all groups are different. How about practically? To anwsers this question the some statisctis were calculated for cost per KW. 
 
+```
+def percentile_75(x):
+    return np.percentile(x,75)
+def percentile_25(x):
+    return np.percentile(x,25)
+df_rep.groupby('Module Technology #1')['cost_per_KW_with_rebate'].agg([np.mean, np.median, percentile_25, percentile_75, 'count'])
+
+```
+
 | Module Technology          | Mean | Median | P25| P75 | Count    |
 |----------------|-------------|----------|-----------|-----------|--------|
 | CIGS           | 4543.995769 | 4149.680 | 2901.1700 | 5627.3750 | 891    |
@@ -127,4 +136,24 @@ Statistically all groups are different. How about practically? To anwsers this q
 | crystalline    | 4585.426336 | 4400.000 | 3500.0000 | 5256.0000 | 24797  |
 | multiple       | 6860.432288 | 4512.360 | 3607.5900 | 5397.7200 | 2443   |
 
-From table above one can observe that 
+From table above one can observe that distributions are different , especially if considering Mono and Poly we can see say mony is cheaper.
+
+### Efficiencies
+
+The code below is used to mean and median efficiency for technology types from all time data. 
+```
+df_rep.groupby('Module Technology #1')['Module Efficiency #1'].agg([np.mean,np.median, 'count'])
+```
+The below is a short analysis on efficiencies. We can observe that Monocrystaline PVs are the most efficent. 
+
+|    Module Technology       | mean | median | count    |
+|:--------------:|----------|----------|--------|
+|       CIS      | 0.150983 | 0.152381 | 81     |
+|      CdTe      | 0.104439 | 0.104167 | 627    |
+|      Mono      | 0.181952 | 0.181847 | 496038 |
+|   Mono + a-Si  | 0.186594 | 0.194611 | 14029  |
+|      Poly      | 0.156783 | 0.158683 | 398734 |
+|    Thin Film   | 0.153520 | 0.139860 | 406    |
+|      a-Si      | 0.061981 | 0.062000 | 312    |
+| a-Si + Micro-c | 0.092638 | 0.094156 | 35     | 
+|   CIGS      | 0.117233 | 0.128440 | 862    |
