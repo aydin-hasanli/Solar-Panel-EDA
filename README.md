@@ -60,16 +60,17 @@ Abbreviations for some of techologies are given below.
 
 ### Hypotethis testing Kruskal–Wallis test 
 Kruskal–Wallis test is non-parametric method for testing that compares two or more independent samples of equal or different sample sizes.
-Kruskal–Wallis test was used to perform Hypotethis testing of between several types of module technology. 
-
-Null hypothesys: Cost per KW is same the for all module technology types.
-Alternative hypothesys: Cost per KW is same the for all module technology types.
+Kruskal–Wallis test was used to perform Hypotethis testing of between several types of module technology. \
+\
+Null hypothesys: Cost per KW is same the for all module technology types.\
+Alternative hypothesys: Cost per KW is same the for all module technology types.\
 Signnificance level threshold is 5%.
 
 
 
 First several dataframes were created for each technology type with only column 'cost_per_KW_with_rebate'.
 
+```   
     df_rep_CIS=df_rep[df_rep['Module Technology #1']=='CIS']['cost_per_KW_with_rebate']
     df_rep_CdTe=df_rep[df_rep['Module Technology #1']=='CdTe']['cost_per_KW_with_rebate']
     df_rep_Mono=df_rep[df_rep['Module Technology #1']=='Mono']['cost_per_KW_with_rebate']
@@ -78,16 +79,18 @@ First several dataframes were created for each technology type with only column 
     df_rep_Thin_Film=df_rep[df_rep['Module Technology #1']=='Thin Film']['cost_per_KW_with_rebate']
     df_rep_crystalline=df_rep[df_rep['Module Technology #1']=='crystalline']['cost_per_KW_with_rebate']
     df_rep_multiple=df_rep[df_rep['Module Technology #1']=='multiple']['cost_per_KW_with_rebate']
+  
+ ```
 
-Then Kruskal–Wallis test from scipy was performed on all groups
+Then Kruskal–Wallis test from scipy.stats module was performed on all groups
       
-    ``` 
-    stat, p = stats.kruskal(df_rep_CIS,df_rep_CdTe,df_rep_Mono,df_rep_MonoSci,df_rep_Poly, df_rep_Thin_Film, df_rep_crystalline, df_rep_multiple)
-    print('stat=%.0f, p-value=%.3f' % (stat, p))
-     ```
+stat=%.0f, p-value=%.3f' % (stat, p))
 
-    ``` 
-    stat=16444, p-value=0.000
-     ```
 
    
+```
+    stat, p = stats.kruskal(df_rep_CIS,df_rep_CdTe,df_rep_Mono,df_rep_MonoSci,df_rep_Poly, df_rep_Thin_Film, df_rep_crystalline, df_rep_multiple)
+    print('stat=%.0f, p-value=%.3f' % (stat, p))
+
+```
+    stat=16444, p-value=0.000
