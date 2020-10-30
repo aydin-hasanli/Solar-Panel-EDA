@@ -11,7 +11,7 @@
 ## Data
    Data is taken from Berkeley Lab [Tracking the Sun Report](https://emp.lbl.gov/tracking-the-sun), where csv files has data for 1998-2018 year across the 28 states. Data is collected from US government agencies. 
 ### Clean up and transformations
-None values were give as -9999, those points were cleaned up and four more columns were added. Two most important calculated columns are:
+Null values were give as -9999, those points were cleaned up and four more columns were added. Two most important calculated columns are:
 
  cost_per_KW = total installation cost over system size\
  cost_per_KW_with_rebate = (total installation cost - rebate) over system size
