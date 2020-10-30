@@ -107,7 +107,7 @@ Also Kruskal–Wallis test was performed only on mono and poly technology groups
 Output: \
     ```
     stat=15230, p-value=0.000
-    ```\
+    ```
 
 If we perform Mann–Whitney U test on mono and poly technology groups, we would get the same results.
 
