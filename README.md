@@ -64,7 +64,7 @@ Kruskal–Wallis test was used to perform Hypotethis testing of between several 
 \
 Null hypothesys: Cost per KW is same the for all module technology types.\
 Alternative hypothesys: Cost per KW is same the for all module technology types.\
-Signnificance level threshold is 5%.
+Significance level threshold (alpha) is 5%.
 
 
 
