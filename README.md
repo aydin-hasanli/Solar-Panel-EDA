@@ -13,4 +13,7 @@
    
 ## Explaitory Data Analysis
    Jupyter notebook was used to create EDA focused on Costs, States, Customer Segments, Module Technologies and Efficiencies. 
+   
 ### States
+    
+    ![States](https://github.com/aydin-hasanli/Solar-Panel-EDA/blob/main/Images/number_of_install_by_state.png)
