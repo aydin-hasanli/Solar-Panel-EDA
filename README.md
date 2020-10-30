@@ -144,7 +144,7 @@ The code below is used to mean and median efficiency for technology types from a
 ```
 df_rep.groupby('Module Technology #1')['Module Efficiency #1'].agg([np.mean,np.median, 'count'])
 ```
-The below is a short analysis on efficiencies. We can observe that Monocrystaline PVs are the most efficent.  Ofcourse this will need more comprehensive 
+The below is a short analysis on efficiencies. We can observe that Monocrystaline PVs are the most efficent.  Of course this will need more comprehensive with data separated by years to see more clear picture of evalution of panel efficiencies. 
 
 |    Module Technology       | mean | median | count    |
 |:--------------:|----------|----------|--------|
