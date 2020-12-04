@@ -17,7 +17,7 @@ Null values were give as -9999, those points were cleaned up and four more colum
  cost_per_KW_with_rebate = (total installation cost - rebate) over system size
 
 
-## Explaitory Data Analysis
+## Exploratory data analysis
    Jupyter notebook was used to create EDA focused on Costs, States, Customer Segments, Module Technologies and Efficiencies. 
    
 ### States
